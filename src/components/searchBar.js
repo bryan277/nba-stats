@@ -40,9 +40,7 @@ class SearchBar extends Component {
     });
 
     this.setState({searchResults: filteredTeams});
-    console.log(input)
   }
-
 
   render(){
     return(
@@ -56,8 +54,8 @@ class SearchBar extends Component {
         <div className="teams-container">
           { this.state.searchResults.map((team, index) =>
             <Fade key={index}>
-            <div className="team">
-              <img src={`/images/teams/${team}.png`} alt={team} />
+            <div className="team hvr-underline-from-center">
+              <a href={`http://www.nba.com/${team}/roster`}><img src={`/images/teams/${team}.png`} alt={team} /></a>
             </div>
             </Fade>
           )}
