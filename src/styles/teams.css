@@ -1,0 +1,14 @@
+.teams-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* flex item */
+.team {
+
+}
+
+img {
+  width: 150px;
+}
