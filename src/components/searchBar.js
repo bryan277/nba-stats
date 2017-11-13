@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/teams.css'
+import { Fade } from 'react-reveal';
 
 class SearchBar extends Component {
   constructor(props){
@@ -51,9 +52,11 @@ class SearchBar extends Component {
         </div>
         <div className="teams-container">
           { this.state.searchResults.map((team, index) =>
-            <div className="team" key={index}>
+            <Fade key={index}>
+            <div className="team">
               <img src={`/images/teams/${team}.png`} alt={team} />
             </div>
+            </Fade>
           )}
         </div>
       </div>
