@@ -51,7 +51,7 @@ class SearchBar extends Component {
           <img src={'/images/nba-logo.png'} alt="nba logo"/>
         </div>
         <div className="search-container">
-          <input type="text" className="search" value={this.state.searchInput} onChange={this.handleInputChange} />
+          <input type="text" className="search" placeholder="Search your team..." value={this.state.searchInput} onChange={this.handleInputChange} />
         </div>
         <div className="teams-container">
           { this.state.searchResults.map((team, index) =>

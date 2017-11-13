@@ -3,7 +3,19 @@
   flex-direction: column;
 }
 
-.teams-container{
+.search-container input {
+  border: 0;
+  border-bottom: 2px solid #006bb7;
+  width: 50%;
+  height: 30px;
+  font-size: 14px;
+}
+
+*:focus {
+    outline: none;
+}
+
+.teams-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -15,12 +27,20 @@
 }
 
 .logo-container img {
-  width: 100px;
+  width: 75px;
 }
 
 @media (min-width: 768px) {
   .logo-container, .search-container, .teams-container {
     padding: 0 20px;
+  }
+
+  .search-container input {
+    width: 30%;
+  }
+
+  .logo-container {
+    margin-top: 15px;
   }
 }
 
