@@ -11,7 +11,8 @@ class Teams extends Component {
         "magic", "mavericks", "nets", "nuggets", "pacers",
         "pelicans", "pistons", "raptors", "rockets", "spurs",
         "suns", "thunder", "timberwolves", "warriors", "wizards"
-       ]
+       ],
+       searchResults: []
     }
   }
 
