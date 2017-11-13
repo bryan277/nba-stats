@@ -46,7 +46,7 @@ class SearchBar extends Component {
 
   render(){
     return(
-      <div>
+      <div className="main-container">
         <div className="search-container">
           <input type="text" className="search" value={this.state.searchInput} onChange={this.handleInputChange} />
         </div>

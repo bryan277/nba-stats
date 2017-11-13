@@ -1,14 +1,27 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .teams-container{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-/* flex item */
-.team {
-
-}
-
 img {
   width: 150px;
+  margin: 10px;
+}
+
+@media (min-width: 768px) {
+  .search-container, .teams-container {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .search-container, .teams-container {
+    padding: 0 50px;
+  }
 }
