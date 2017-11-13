@@ -11,7 +11,7 @@
 
 img {
   width: 150px;
-  margin: 10px;
+  margin: 10px 6px;
 }
 
 @media (min-width: 768px) {
