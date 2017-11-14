@@ -28,9 +28,9 @@ class SearchBar extends Component {
     this.handleInputChange = this.handleInputChange.bind(this);
   }
 
-  componentDidMount(){
+  fetchRoster(team){
 
-    fetch(`http://localhost:3000/warriors/roster`)
+    fetch(`http://localhost:3000/${team}/roster`)
       .then((response) => response.json())
     .then((data) => {
       console.log(data)
@@ -64,8 +64,8 @@ class SearchBar extends Component {
         <div className="teams-container">
           { this.state.searchResults.map((team, index) =>
             <Fade key={index}>
-            <div className="team hvr-underline-from-center">
-              <a href={`http://www.nba.com/${team}/roster`}><img src={`/images/teams/${team}.png`} alt={team} /></a>
+            <div className="team hvr-underline-from-center" onClick={() => {this.fetchRoster(team)}}>
+              <img src={`/images/teams/${team}.png`} alt={team} />
             </div>
             </Fade>
           )}
