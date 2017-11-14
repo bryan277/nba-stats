@@ -28,15 +28,6 @@ class SearchBar extends Component {
     this.handleInputChange = this.handleInputChange.bind(this);
   }
 
-  fetchRoster(team){
-
-    fetch(`http://localhost:3000/${team}/roster`)
-      .then((response) => response.json())
-    .then((data) => {
-      console.log(data)
-     })
-
-  }
 
   handleInputChange(event){
     this.setState({searchInput: event.target.value});
@@ -64,7 +55,7 @@ class SearchBar extends Component {
         <div className="teams-container">
           { this.state.searchResults.map((team, index) =>
             <Fade key={index}>
-            <div className="team hvr-underline-from-center" onClick={() => {this.fetchRoster(team)}}>
+            <div className="team hvr-underline-from-center">
               <img src={`/images/teams/${team}.png`} alt={team} />
             </div>
             </Fade>
