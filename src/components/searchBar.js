@@ -28,6 +28,16 @@ class SearchBar extends Component {
     this.handleInputChange = this.handleInputChange.bind(this);
   }
 
+  componentDidMount(){
+
+    fetch(`http://localhost:3000/warriors/roster`)
+      .then((response) => response.json())
+    .then((data) => {
+      console.log(data)
+     })
+
+  }
+
   handleInputChange(event){
     this.setState({searchInput: event.target.value});
 
