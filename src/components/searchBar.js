@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
 import '../styles/teams.css'
 import { Fade } from 'react-reveal';
 
@@ -55,9 +57,11 @@ class SearchBar extends Component {
         <div className="teams-container">
           { this.state.searchResults.map((team, index) =>
             <Fade key={index}>
+            < Link to={`/${team}/roster`} >
             <div className="team hvr-underline-from-center">
               <img src={`/images/teams/${team}.png`} alt={team} />
             </div>
+            </ Link>
             </Fade>
           )}
         </div>
