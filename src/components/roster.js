@@ -21,18 +21,18 @@ class Roster extends Component {
   }
 
   showData(event){
-    console.log(event.target.querySelector("player-container"))
+    console.log(event.target.closest(".expanded-data-container"))
   }
 
   render(){
     return(
       <div className="roster-container">
         {this.state.roster.map((player) =>
-          <div className="player-container" key={player.id}>
+          <div className="player-container" key={player.id} onClick={(e) => {this.showData(e)}}>
             <div className="headshot">
               <img src={'/images/player.png'} alt="headshot"/>
             </div>
-            <div className="simple-data-container" onClick={(e) => {this.showData(e)}}>
+            <div className="simple-data-container">
               <div className="name-position-container">
                 <div className="name">
                   {player.name}
