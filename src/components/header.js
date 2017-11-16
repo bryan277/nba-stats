@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import '../styles/teams.css'
+import '../styles/style.css'
 import { Fade } from 'react-reveal';
 
 const Header = () => {

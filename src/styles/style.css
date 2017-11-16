@@ -57,6 +57,27 @@
   right: 0;
 }
 
+/* ===============================
+              ROSTER
+=============================== */
+
+.player-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.simple-data-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  width: 150px;
+}
+
+/* ===============================
+            MEDIA QUERIES
+=============================== */
+
 .logo-container img {
   width: 75px;
 }
