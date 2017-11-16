@@ -61,6 +61,19 @@
               ROSTER
 =============================== */
 
+.simple-data-container, .headshot img {
+  width: 300px;
+}
+
+.name {
+  font-size: 25px;
+}
+
+.jersey-number {
+  align-self: center;
+  font-size: 30px;
+}
+
 .player-container {
   display: flex;
   flex-direction: column;
@@ -70,8 +83,9 @@
 .simple-data-container {
   display: flex;
   justify-content: space-between;
-  padding: 10px 0;
-  width: 150px;
+  padding: 2px 5px;
+  background-color: #006bb7;
+  color: white;
 }
 
 /* ===============================
