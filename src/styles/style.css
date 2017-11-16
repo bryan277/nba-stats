@@ -65,10 +65,16 @@ html {
   background-image: url('/images/floor.png');
 }
 
-.roster-container {
+.players {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.roster-container .team-logo img {
+  width: 125px;
+  display: block;
+  margin: 0 auto;
 }
 
 .player-container {
