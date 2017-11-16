@@ -124,7 +124,7 @@ html {
 .expanded-data-container {
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
-  /*display: none;*/
+  display: none;
 }
 
 .expanded-data-container .bio-container{
