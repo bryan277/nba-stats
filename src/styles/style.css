@@ -63,6 +63,7 @@
 
 html {
   background-image: url('/images/floor.png');
+  background-attachment: fixed;
 }
 
 .players {
