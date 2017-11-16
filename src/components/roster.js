@@ -20,17 +20,19 @@ class Roster extends Component {
       })
   }
 
-  showData(event){
-    console.log(event.target.closest(".expanded-data-container"))
+  toggleExtendedData(event){
+    if(event.target.nextSibling != null && event.target.nextSibling.classList[0] === "expanded-data-container"){
+      event.target.nextSibling.classList.toggle("hide")
+    }
   }
 
   render(){
     return(
       <div className="roster-container">
         {this.state.roster.map((player) =>
-          <div className="player-container" key={player.id} onClick={(e) => {this.showData(e)}}>
+          <div className="player-container" key={player.id} onClick={(e) => {this.toggleExtendedData(e)}}>
             <div className="headshot">
-              <img src={`http://${player.pic_url}`} alt="headshot"/>
+              <img src={`/images/player.png`} alt="headshot"/>
             </div>
             <div className="simple-data-container">
               <div className="name-position-container">
@@ -45,7 +47,7 @@ class Roster extends Component {
                 {player.jersey_number}
               </div>
             </div>
-            <div className="expanded-data-container">
+            <div className="expanded-data-container hide">
               <div className="bio-container">
                 <div className="expanded-data-item height">
                   <div className="edi-attribute">

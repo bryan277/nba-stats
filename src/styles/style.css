@@ -121,10 +121,13 @@ html {
 
 /* expanded data container */
 
+.hide {
+  display: none;
+}
+
 .expanded-data-container {
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
-  display: none;
 }
 
 .expanded-data-container .bio-container{
