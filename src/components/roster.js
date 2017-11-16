@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Zoom } from 'react-reveal';
 import '../styles/style.css'
 
 class Roster extends Component {
@@ -32,6 +33,7 @@ class Roster extends Component {
         <div className="team-logo">
           <img src={`/images/teams/${this.state.team}.png`} alt="logo" />
         </div>
+        <Zoom>
         <div className="players">
           {this.state.roster.map((player) =>
             <div className="player-container" key={player.id} onClick={(e) => {this.toggleExtendedData(e)}}>
@@ -140,6 +142,7 @@ class Roster extends Component {
             </div>
           )}
         </div>
+        </Zoom>
       </div>
     )
   }
