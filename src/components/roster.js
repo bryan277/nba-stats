@@ -41,6 +41,56 @@ class Roster extends Component {
                 {player.jersey_number}
               </div>
             </div>
+            <div className="expanded-data-container">
+              <div className="expanded-data-item height">
+                <div className="edi-attribute">
+                  Height:
+                </div>
+                <div className="edi-attribute-data">
+                  {player.height}
+                </div>
+              </div>
+              <div className="expanded-data-item weight">
+                <div className="edi-attribute">
+                  Weight:
+                </div>
+                <div className="edi-attribute-data">
+                  {player.weight}
+                </div>
+              </div>
+              <div className="expanded-data-item dob">
+                <div className="edi-attribute">
+                  DOB:
+                </div>
+                <div className="edi-attribute-data">
+                  {player.dob}
+                </div>
+              </div>
+              <div className="expanded-data-item prior-to-nba">
+                <div className="edi-attribute">
+                  Prior to NBA:
+                </div>
+                <div className="edi-attribute-data">
+                  {player.prior_to_nba}
+                </div>
+              </div>
+              <div className="expanded-data-item country">
+                <div className="edi-attribute">
+                  Country:
+                </div>
+                <div className="edi-attribute-data">
+                  {player.country}
+                </div>
+              </div>
+              <div className="expanded-data-item years-in-nba">
+                <div className="edi-attribute">
+                  Years in NBA:
+                </div>
+                <div className="edi-attribute-data">
+                  {player.years_pro}
+                </div>
+              </div>
+            </div>
           </div>
         )}
       </div>

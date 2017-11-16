@@ -61,7 +61,9 @@
               ROSTER
 =============================== */
 
-.simple-data-container, .headshot img {
+/* simple data container */
+
+.expanded-data-container, .simple-data-container, .headshot img {
   width: 300px;
 }
 
@@ -84,8 +86,48 @@
   display: flex;
   justify-content: space-between;
   padding: 2px 5px;
+}
+
+.simple-data-container, .expanded-data-container {
   background-color: #006bb7;
   color: white;
+}
+
+/* expanded data container */
+
+.expanded-data-container {
+  margin: 0;
+  padding: 8px 5px 12px 5px;
+}
+
+.expanded-data-item {
+  display: flex;
+  margin: 8px 0;
+
+}
+
+.height .edi-attribute-data{
+  margin-left: 68px;
+}
+
+.weight .edi-attribute-data{
+  margin-left: 65px;
+}
+
+.dob .edi-attribute-data {
+  margin-left: 78px;
+}
+
+.prior-to-nba .edi-attribute-data {
+  margin-left: 25px;
+}
+
+.country .edi-attribute-data {
+  margin-left: 60px;
+}
+
+.years-in-nba .edi-attribute-data {
+  margin-left: 23px;
 }
 
 /* ===============================
