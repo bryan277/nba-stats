@@ -63,8 +63,9 @@
 
 /* simple data container */
 
-.expanded-data-container, .simple-data-container, .headshot img {
-  width: 300px;
+.expanded-data-container .bio-container, .simple-data-container, .headshot img {
+  width: 310px;
+  box-sizing: border-box;
 }
 
 .name {
@@ -95,15 +96,14 @@
 
 /* expanded data container */
 
-.expanded-data-container {
+.expanded-data-container .bio-container{
   margin: 0;
-  padding: 8px 5px 12px 5px;
+  padding: 8px 5px 0px 5px;
 }
 
 .expanded-data-item {
   display: flex;
   margin: 8px 0;
-
 }
 
 .height .edi-attribute-data{
@@ -128,6 +128,21 @@
 
 .years-in-nba .edi-attribute-data {
   margin-left: 23px;
+}
+
+/* stats */
+
+.player-stats-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: gray;
+  padding: 10px;
+}
+
+.player-stats-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* ===============================
