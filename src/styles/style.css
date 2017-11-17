@@ -5,10 +5,11 @@
 
 .search-container input {
   border: 0;
-  border-bottom: 2px solid #006bb7;
+  border: 2px solid #006bb7;
   width: 50%;
   height: 30px;
   font-size: 14px;
+  background-color: transparent;
 }
 
 *:focus {
