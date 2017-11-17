@@ -3,12 +3,12 @@ A ReactJS app displaying LIVE NBA player statistics.
 
 ## Features
 ### Filter through all NBA teams
-![Teams](https://github.com/edgarsbarajas/nba-stats/blob/master/lib/screenshots/teams.png)
-![Filtered Teams](https://github.com/edgarsbarajas/nba-stats/blob/master/lib/screenshots/teams-filtered.png)
+![Teams](https://github.com/edgarsbarajas/nba-stats/blob/master/public/images/screenshots/teams.png)
+![Filtered Teams](https://github.com/edgarsbarajas/nba-stats/blob/master/public/images/screenshots/teams_filtered.png)
 
 ### View LIVE NBA player stats directly from the NBA website
-![Roster](https://github.com/edgarsbarajas/nba-stats/blob/master/lib/screenshots/roster.png)
-![Roster Details](https://github.com/edgarsbarajas/nba-stats/blob/master/lib/screenshots/roster1.png)
+![Roster](https://github.com/edgarsbarajas/nba-stats/blob/master/public/images/screenshots/roster1.png)
+![Roster Details](https://github.com/edgarsbarajas/nba-stats/blob/master/public/images/screenshots/roster2.png)
 
 ## Technologies Used
 ### Languages:
