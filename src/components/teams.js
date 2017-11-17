@@ -55,7 +55,7 @@ class Teams extends Component {
           { this.state.searchResults.map((team, index) =>
             <Fade key={index}>
             <Link to={`/${team}/roster`}>
-            <div className="team hvr-underline-from-center">
+            <div className="team hvr-underline-from-center hvr-grow-shadow">
               <img src={`/images/teams/${team}.png`} alt={team} />
             </div>
             </Link>
