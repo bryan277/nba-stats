@@ -13,7 +13,7 @@ class Roster extends Component {
   }
 
   componentDidMount(){
-    fetch(`http://localhost:3000/${this.state.team}/roster`)
+    fetch(`http://nba-scraper-v1.herokuapp.com/${this.state.team}/roster`)
       .then(response => response.json())
       .then(json => {
         this.setState({roster: json})
