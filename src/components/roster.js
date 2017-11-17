@@ -37,7 +37,7 @@ class Roster extends Component {
           {this.state.roster.map((player) =>
             <div className="player-container" key={player.id} onClick={(e) => {this.toggleExtendedData(e)}}>
               <div className="headshot">
-                <img src={`/images/player.png`} alt="headshot"/>
+                <img src={`http://${player.pic_url}`} alt="headshot"/>
               </div>
               <div className="simple-data-container">
                 <div className="name-position-container">
