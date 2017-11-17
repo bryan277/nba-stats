@@ -17,9 +17,9 @@ A ReactJS app displaying LIVE NBA player statistics.
 * CSS3
 
 ### Frameworks/Libaries:
-* [Hover] (https://github.com/IanLunn/Hover)
-* [React Reveal] (https://www.npmjs.com/package/react-reveal)
-* [React Router DOM] (https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)
+* [Hover](https://github.com/IanLunn/Hover)
+* [React Reveal](https://www.npmjs.com/package/react-reveal)
+* [React Router DOM](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)
 
 ### Gems/APIs:
 * [NBAScraper](https://github.com/edgarsbarajas/nba-scraper)
@@ -27,10 +27,6 @@ A ReactJS app displaying LIVE NBA player statistics.
 ## ReactJS version
 
 Built using React version 16.1.0
-
-## System dependencies
-
-
 
 ## Configuration
 
