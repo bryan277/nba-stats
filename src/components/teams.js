@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import '../styles/style.css'
 import { Fade } from 'react-reveal';
 
 class Teams extends Component {
@@ -10,7 +9,7 @@ class Teams extends Component {
     this.state = {
       searchInput: "",
       teams: [
-        "76ers", "blazers", "bucks", "bulls", "cavaliers",
+        "sixers", "blazers", "bucks", "bulls", "cavaliers",
         "celtics", "clippers", "grizzlies", "hawks", "heat",
         "hornets", "jazz", "kings", "knicks", "lakers",
         "magic", "mavericks", "nets", "nuggets", "pacers",
@@ -18,7 +17,7 @@ class Teams extends Component {
         "suns", "thunder", "timberwolves", "warriors", "wizards"
        ],
        searchResults: [
-        "76ers", "blazers", "bucks", "bulls", "cavaliers",
+        "sixers", "blazers", "bucks", "bulls", "cavaliers",
         "celtics", "clippers", "grizzlies", "hawks", "heat",
         "hornets", "jazz", "kings", "knicks", "lakers",
         "magic", "mavericks", "nets", "nuggets", "pacers",
@@ -45,22 +44,37 @@ class Teams extends Component {
     this.setState({searchResults: filteredTeams});
   }
 
-  render(){
-    return(
-      <div className="main-container">
-        <div className="search-container">
-          <input type="text" className="search" placeholder="Search your team..." value={this.state.searchInput} onChange={this.handleInputChange} />
-        </div>
-        <div className="teams-container">
-          { this.state.searchResults.map((team, index) =>
-            <Fade key={index}>
-            <Link to={`/${team}/roster`}>
+  renderResults(searchResults){
+    return searchResults.map((team, index) => {
+      return (
+        <Fade key={index}>
+          <Link to={`/${team}/roster`}>
             <div className="team hvr-underline-from-center hvr-grow-shadow">
               <img src={`/images/teams/${team}.png`} alt={team} />
             </div>
-            </Link>
-            </Fade>
-          )}
+          </Link>
+        </Fade>
+      )
+    })
+  }
+
+  render(){
+    const searchResults = this.state.searchResults;
+    const searchInput = this.state.searchInput;
+
+    return(
+      <div className="main-container">
+        <div className="search-container">
+          <input
+            type="text"
+            className="search"
+            placeholder="Search your team..."
+            value={searchInput}
+            onChange={this.handleInputChange}
+          />
+        </div>
+        <div className="teams-container">
+          {this.renderResults(searchResults)}
         </div>
       </div>
     )
