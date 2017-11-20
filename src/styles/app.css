@@ -1,0 +1,28 @@
+html {
+  background-image: url('/images/floor.png');
+  background-attachment: fixed;
+}
+
+/* ===============================
+            MEDIA QUERIES
+=============================== */
+
+@media (min-width: 768px) {
+  .logo-container, .search-container, .teams-container {
+    padding: 0 20px;
+  }
+
+  .search-container input {
+    width: 30%;
+  }
+
+  .logo-container {
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo-container, .search-container, .teams-container {
+    padding: 0 50px;
+  }
+}
