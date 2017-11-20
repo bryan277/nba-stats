@@ -1,8 +1,9 @@
-
 import React, { Component } from 'react'
 import { Zoom } from 'react-reveal';
 
 import Player from './player';
+
+import '../styles/roster.css'
 
 class Roster extends Component {
   constructor(props){

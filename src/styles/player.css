@@ -1,0 +1,117 @@
+.player-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-container .headshot {
+  margin-bottom: -4px;
+}
+
+/* simple data container */
+
+.expanded-data-container .bio-container, .simple-data-container {
+  width: 300px;
+  box-sizing: border-box;
+}
+
+.simple-data-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 5px;
+  align-items: center;
+}
+
+.name-position-container {
+  padding-top: 2px;
+}
+
+.name-position-container .position{
+  height: 23px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.name, .jersey-number {
+  font-family: 'Impact';
+}
+
+.position {
+  /*padding-left: 1px;*/
+}
+
+.name {
+  font-size: 25px;
+}
+
+.jersey-number {
+  font-size: 30px;
+}
+
+.simple-data-container, .expanded-data-container {
+  background-color: #006bb7;
+  color: white;
+}
+
+/* expanded data container */
+
+.hide {
+  display: none;
+}
+
+.expanded-data-container {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+}
+
+.expanded-data-container .bio-container{
+  margin: 0;
+  padding: 2px 5px 10px 5px;
+}
+
+.expanded-data-item {
+  display: flex;
+  margin: 8px 0;
+}
+
+.height .edi-attribute-data{
+  margin-left: 58px;
+}
+
+.weight .edi-attribute-data{
+  margin-left: 56px;
+}
+
+.dob .edi-attribute-data {
+  margin-left: 71px;
+}
+
+.prior-to-nba .edi-attribute-data {
+  margin-left: 25px;
+}
+
+.country .edi-attribute-data {
+  margin-left: 52px;
+}
+
+.years-in-nba .edi-attribute-data {
+  margin-left: 22px;
+}
+
+/* stats */
+
+.player-stats-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: gray;
+  padding: 10px;
+}
+
+.player-stats-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-stats-item-attribute {
+  font-weight: bold;
+}

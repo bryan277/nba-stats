@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 
 import { Fade } from 'react-reveal';
 
+import '../styles/teams.css'
+
 class Teams extends Component {
   constructor(props){
     super(props);
