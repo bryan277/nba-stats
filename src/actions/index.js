@@ -7,3 +7,10 @@ export const latestRoster = (team) => {
     payload: request
   }
 }
+
+export function clearRoster(){
+    return({
+      type: 'CLEAR_ROSTER',
+      payload: []
+    })
+}

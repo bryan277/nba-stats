@@ -11,7 +11,7 @@ import Player from '../components/player';
 import '../styles/roster.css'
 
 // actions
-import { latestRoster } from '../actions'
+import { latestRoster, clearRoster } from '../actions'
 
 class Roster extends Component {
   constructor(props){
@@ -28,7 +28,7 @@ class Roster extends Component {
 
   componentWillUnmount(){
     console.log("unmounted ya bisj")
-    // this.props.latest_roster = []
+    this.props.clearRoster()
   }
 
   renderPlayers({latest_roster}){
@@ -41,8 +41,6 @@ class Roster extends Component {
   }
 
   render(){
-    const roster = this.state.roster;
-
     return(
       <div className="roster-container">
         <div className="team-logo">
@@ -62,7 +60,7 @@ class Roster extends Component {
 }
 
 function mapDispatchToProps(dispatch){
-  return bindActionCreators({latestRoster}, dispatch)
+  return bindActionCreators({latestRoster, clearRoster}, dispatch)
 }
 
 function mapStateToProps(state){
