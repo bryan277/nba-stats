@@ -17,6 +17,9 @@ A ReactJS app displaying LIVE NBA player statistics.
 * CSS3
 
 ### Frameworks/Libaries:
+* [Redux](https://redux.js.org/)
+* [React-Redux](https://github.com/reactjs/react-redux)
+* [Redux-Promise](https://github.com/capaj/react-promise)
 * [Hover](https://github.com/IanLunn/Hover)
 * [React Reveal](https://www.npmjs.com/package/react-reveal)
 * [React Router DOM](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)
