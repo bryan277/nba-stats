@@ -5,7 +5,7 @@ import './styles/app.css'
 
 // Components
 import Header from './components/header'
-import Roster from './components/roster'
+import Roster from './containers/roster'
 import Teams from './components/teams'
 
 class App extends Component {
