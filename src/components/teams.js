@@ -40,7 +40,7 @@ class Teams extends Component {
 
   filterTeams(input){
     let filteredTeams = this.state.teams.filter(function(team){
-      return team.includes(input);
+      return team.includes(input.toLowerCase());
     });
 
     this.setState({searchResults: filteredTeams});
